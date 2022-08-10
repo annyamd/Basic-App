@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    tools:context=".EnterFragment">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_1" />
+
+    <TextView
+        android:id="@+id/hey_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:layout_marginTop="72dp"
+        android:text="Hey, \nlogin now"
+        android:textColor="#000"
+        android:textSize="28sp" />
+
+
+    <TextView
+        android:id="@+id/if_new_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hey_tv"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="8dp"
+        android:text="If you are new/" />
+
+    <TextView
+        android:id="@+id/create_new_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/if_new_tv"
+        android:layout_toRightOf="@id/if_new_tv"
+        android:text="Create New"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/login_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_new_tv"
+        android:layout_marginTop="40dp">
+
+        <EditText
+            android:id="@+id/login_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f6f6f6"
+            android:hint="Login"
+            android:padding="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/password_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_layout"
+        android:layout_marginTop="24dp">
+
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f6f6f6"
+            android:hint="Password"
+            android:padding="15dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/forgot_password_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_layout"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="8dp"
+        android:text="Forgot password? /" />
+
+    <TextView
+        android:id="@+id/reset_password_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/forgot_password_tv"
+        android:layout_toRightOf="@id/forgot_password_tv"
+        android:text="Reset"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_above="@id/skip_reg_tv"
+        android:text="Login"
+        android:background="#8bcac0"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/skip_reg_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="15dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="Skip Now" />
+
+</RelativeLayout>
