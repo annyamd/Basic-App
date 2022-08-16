@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="32dp"
     tools:context=".EnterFragment">
 
@@ -11,52 +10,57 @@
         android:id="@+id/icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/icon_desc"
         android:src="@mipmap/icon_1" />
 
     <TextView
-        android:id="@+id/hey_tv"
+        android:id="@+id/welcome_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/icon"
         android:layout_marginTop="72dp"
-        android:text="Hey, \nlogin now"
-        android:textColor="#000"
-        android:textSize="28sp" />
-
+        android:text="@string/welcome_text"
+        android:textSize="28sp"
+        android:textColor="?colorOnPrimary"
+        />
 
     <TextView
-        android:id="@+id/if_new_tv"
+        android:id="@+id/register_question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/hey_tv"
+        android:layout_below="@id/welcome_tv"
         android:layout_marginTop="20dp"
         android:layout_marginRight="8dp"
-        android:text="If you are new/" />
+        android:text="@string/register_question"
+        android:textSize="16sp"
+        />
 
     <TextView
-        android:id="@+id/create_new_tv"
+        android:id="@+id/register_link"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/if_new_tv"
-        android:layout_toRightOf="@id/if_new_tv"
-        android:text="Create New"
-        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignBottom="@id/register_question"
+        android:layout_toRightOf="@id/register_question"
+        android:text="@string/register_link_text"
+        android:textColor="?colorOnPrimary"
         android:textSize="18sp" />
 
     <RelativeLayout
         android:id="@+id/login_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/create_new_tv"
+        android:layout_below="@id/register_link"
         android:layout_marginTop="40dp">
 
         <EditText
             android:id="@+id/login_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#f6f6f6"
-            android:hint="Login"
-            android:padding="15dp" />
+            android:hint="@string/login_hint"
+            android:inputType="text"
+            android:background="@drawable/edit_text_field"
+            style="@style/EditTextFieldStyle"
+            android:textSize="14sp" />
 
     </RelativeLayout>
 
@@ -69,55 +73,55 @@
 
         <EditText
             android:id="@+id/password_et"
+            style="@style/EditTextFieldStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#f6f6f6"
-            android:hint="Password"
-            android:padding="15dp" />
+            android:background="@drawable/edit_text_field"
+            android:hint="@string/pass_hint"
+            android:inputType="textPassword"
+            android:textSize="14sp" />
 
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/forgot_password_tv"
+        android:id="@+id/reset_password_question_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/password_layout"
         android:layout_marginTop="20dp"
         android:layout_marginRight="8dp"
-        android:text="Forgot password? /" />
+        android:text="@string/reset_pass_question"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/reset_password_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/forgot_password_tv"
-        android:layout_toRightOf="@id/forgot_password_tv"
-        android:text="Reset"
-        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignBottom="@id/reset_password_question_tv"
+        android:layout_toRightOf="@id/reset_password_question_tv"
+        android:text="@string/reset_link"
+        android:textColor="?colorOnPrimary"
         android:textSize="18sp" />
 
-
-    <TextView
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:layout_marginBottom="8dp"
         android:layout_above="@id/skip_reg_tv"
-        android:text="Login"
-        android:background="#8bcac0"
-        android:textColor="#000"
-        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_primary"
         android:gravity="center"
-        />
+        android:padding="16dp"
+        android:text="@string/login_btn_text"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/skip_reg_tv"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:padding="15dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="24dp"
-        android:gravity="center"
-        android:text="Skip Now" />
+        android:padding="16dp"
+        android:text="@string/skip_login_link_text" />
 
 </RelativeLayout>

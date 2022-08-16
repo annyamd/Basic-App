@@ -3,11 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Ann/AndroidStudioProjects/BasicApp/app/src/main/res/drawable/button_primary.xml" value="0.1" />
+        <entry key="..\:/Users/Ann/AndroidStudioProjects/BasicApp/app/src/main/res/drawable/edit_text_field.xml" value="0.168" />
+        <entry key="..\:/Users/Ann/AndroidStudioProjects/BasicApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.168" />
+        <entry key="..\:/Users/Ann/AndroidStudioProjects/BasicApp/app/src/main/res/drawable/rounded_corner_view.xml" value="0.195" />
         <entry key="..\:/Users/Ann/AndroidStudioProjects/BasicApp/app/src/main/res/layout/activity_enter.xml" value="0.25" />
-        <entry key="..\:/Users/Ann/AndroidStudioProjects/BasicApp/app/src/main/res/layout/fragment_enter.xml" value="0.25" />
+        <entry key="..\:/Users/Ann/AndroidStudioProjects/BasicApp/app/src/main/res/layout/fragment_enter.xml" value="0.264" />
         <entry key="..\:/Users/Ann/AndroidStudioProjects/BasicApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/Users/Ann/AndroidStudioProjects/BasicApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+        <entry key="..\:/Users/Ann/AndroidStudioProjects/BasicApp/basicAppKotlin/src/main/res/drawable/ic_launcher_background.xml" value="0.156" />
         <entry key="..\:/Users/Ann/AndroidStudioProjects/BasicApp/basicAppKotlin/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/Ann/AndroidStudioProjects/BasicApp/basicAppKotlin/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.104" />
       </map>
     </option>
   </component>
