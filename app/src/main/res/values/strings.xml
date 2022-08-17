@@ -8,4 +8,6 @@
     <string name="reset_link">Reset</string>
     <string name="login_btn_text">Login</string>
     <string name="skip_login_link_text">Skip Now</string>
+    <string name="pass_hint">Password</string>
+    <string name="login_hint">Login</string>
 </resources>
