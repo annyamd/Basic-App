@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    tools:context=".EnterFragment">
+
+    <ImageView
+        android:id="@+id/reg_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/icon_desc"
+        android:src="@mipmap/icon_1" />
+
+    <TextView
+        android:id="@+id/reg_welcome_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_icon"
+        android:layout_marginTop="72dp"
+        android:text="@string/please_register_text"
+        android:textSize="28sp"
+        android:textColor="?colorOnPrimary"
+        />
+
+    <RelativeLayout
+        android:id="@+id/reg_login_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_welcome_tv"
+        android:layout_marginTop="80dp">
+
+        <EditText
+            android:id="@+id/reg_login_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_hint"
+            android:inputType="text"
+            android:background="@drawable/edit_text_field"
+            style="@style/EditTextFieldStyle"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/reg_password_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_login_layout"
+        android:layout_marginTop="24dp">
+
+        <EditText
+            android:id="@+id/reg_password_et"
+            style="@style/EditTextFieldStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_field"
+            android:hint="@string/pass_hint"
+            android:inputType="textPassword"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/return_link"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_primary"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/sign_up_text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/return_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:padding="16dp"
+        android:text="@string/return_to_login_text" />
+
+</RelativeLayout>

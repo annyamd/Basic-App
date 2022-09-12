@@ -10,4 +10,7 @@
     <string name="skip_login_link_text">Skip Now</string>
     <string name="login_hint">Login</string>
     <string name="pass_hint">Password</string>
+    <string name="return_to_login_text">Return to Login Screen</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="please_register_text">Here You Can\nRegister</string>
 </resources>
