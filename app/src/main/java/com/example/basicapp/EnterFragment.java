@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -15,7 +16,13 @@ import com.example.basicapp.model.Account;
 
 public class EnterFragment extends Fragment {
 
-    public AccountTableManager accountTableManager;
+    private AccountTableManager accountTableManager;
+
+    private EditText loginEdit;
+    private EditText passwordEdit;
+    private Button loginBtn;
+    private TextView registerTv;
+
 
     public EnterFragment() {
         super(R.layout.fragment_enter);
@@ -28,11 +35,9 @@ public class EnterFragment extends Fragment {
 
 //        accountTableManager.createAccount(new Account("ann", "123"));
 
-        EditText loginEdit = view.findViewById(R.id.login_et);
-        EditText passwordEdit = view.findViewById(R.id.password_et);
+        bindViews(view);
 
-        Button login_btn = view.findViewById(R.id.login_button);
-        login_btn.setOnClickListener(view1 -> {
+        loginBtn.setOnClickListener(view1 -> {
 
             String login = loginEdit.getText().toString();
             String password = passwordEdit.getText().toString();
@@ -48,5 +53,13 @@ public class EnterFragment extends Fragment {
                 Toast.makeText(getContext(), "No such account", Toast.LENGTH_SHORT).show();
             }
         });
+
+    }
+
+    private void bindViews(View view) {
+        loginEdit = view.findViewById(R.id.reg_login_et);
+        passwordEdit = view.findViewById(R.id.reg_password_et);
+        loginBtn = view.findViewById(R.id.login_button);
+        registerTv = view.findViewById(R.id.register_link);
     }
 }
